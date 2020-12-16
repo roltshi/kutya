@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/*  Link formázások */
+  a:link {
+    color: rgb(0, 0, 0);
+  }
+  a:visited {
+    color: rgb(0, 0, 0);
+  }
+  a:hover {
+    color: rgb(0, 110, 255);
+  }
+  a:active {
+    color: rgb(27, 165, 175);
+  }
+
+/*          NAVBAR      */
+.active{
+    font-weight: bold;
+}
+
+a.navbar-brand img{
+    pointer-events: none;
+    width: 50px;
+}
+.navbar-custom {
+    background-color: #ffffff;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.nav-item a{
+    font-size: 20px;
+}
+.nav-item a:hover{
+    border-bottom: 1px solid black;
+}
+
+.logotext{
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+    padding-left: 20px;
+}
+
+/*        Főoldal  Főkép           */
+
+.maincontainer{
+    position: relative;
+    z-index: -10;
+    height: 640px;
+    background-image: url("images/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.maincontainer h2{
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    color:  white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*        Főoldal  Alsó szöeg      */
+section.also{
+    height: 10vh;
+    text-align: center;
+}
+section.also .col-md-4{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+}
+.card{
+    background-color: rgb(248, 248, 248);
+}
+.card-text a{
+    color: rgb(23, 173, 23);
+}
+
+/*          Főkép   INFORMÁCIO        */
+
+.maincontainer2{
+    position: relative;
+    z-index: -10;
+    height: 400px;
+    background-image: url("images/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.maincontainer2 h2{
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    color:  white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*      Informacio section      */
+section.info{
+    padding: 30px 0px;
+}
+
+section.info p{
+    font-size: 20px;
+}
+
+/*          Kutyák   főkep        */
+
+.maincontainer3{
+    position: relative;
+    z-index: -10;
+    height: 400px;
+    background-image: url("images/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.maincontainer3 h2{
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    color:  rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*      Kutya section       */
+section.kutya{
+    overflow: hidden;
+    background: #f3f0f0;
+}
+section.kutya .row{
+    background-color: rgb(224, 226, 226);
+}
+section.kutya img{
+    pointer-events: none;
+    padding: 20px 0px;
+    width: 400px;
+    border-radius: 200px;
+}
+.kutyatext{
+    padding-top: 30px;
+}
+.kutya .container{
+    padding-top: 20px;
+}
+
+/*          kapcsolat          */
+
+.maincontainer4 h2{
+    background-color: rgb(218, 245, 245);
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 45px;
+    color:  rgb(0, 0, 0);
+}
+.maincontainer4 p{
+    text-align: center;
+    font-size: 20px;
+}
+.kapcsform{
+    padding-bottom: 150px;
+}
+
+/*          KeyFrames       */
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    
+    }
+}
+
+section.also, section.info, section.kutya, .kapcsform, .maincontainer2{
+    animation: transitionIn 1.75s;
+}

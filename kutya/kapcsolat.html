@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/2a8d29880a.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Galaxy Dogs</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-custom">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png"><span class="logotext">Galaxy</span></a>
+          <button class="navbar-toggler navbar-toggler-right navbar-light" type="button" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span> 
+          </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="info.html">Információk</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kutyak.html">Kutyusok</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="kapcsolat.html">Kapcsolat</a>
+        </li>
+        </ul>
+      </div>
+</nav>
+
+        <div class="maincontainer4">
+            <h2>Kapcsolat</h2>
+            <p>Itt az örökbefogadás kezdete.  Az adatok kitöltése után felvesszük veled a kapcsolatot.</p>
+        </div>
+
+
+    <div class="container mt-3">
+        <form class="kapcsform" action="connect.php" method="post">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user-alt"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Vezetéknév" id="vezetekNev" name="vezetekNev" required>
+                  <input type="text" class="form-control" placeholder="Keresztnév" id="keresztNev" name="keresztNev" required>
+                </div>  
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="far fa-envelope"></i></span>
+                  </div>
+                  <input type="email" id="email" class="form-control" placeholder="E-mail" name="email" required>
+                </div>  
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                  </div>
+                  <input type="number"  class="form-control" placeholder="Telefonszám" id="telefonszam" name="telefonszam" required>
+                </div>  
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-home"></i></span>
+                  </div>
+                  <input type="number" class="form-control" placeholder="Irányítószám" id="iranyitoSzam" name="iranyitoSzam" required>
+                  <input type="text" class="form-control" placeholder="Város" id="varos" name="varos" required>
+                  <input type="text" class="form-control" placeholder="Utca/Házszám" id="utca" name="utca" required>
+                </div>  
+
+                <div class="form-group">
+                        <label for="sel1">Melyik kutya a legszimpatikusabb?</label>
+                        <select class="form-control" id="kutya" name="kutya">
+                          <option value="rex">Rex</option>
+                          <option value="toby">Toby</option>
+                          <option value="anna">Anna</option>
+                          <option value="max">Max</option>
+                          <option value="hero">Hero</option>
+                          <option value="seeley">Seeley</option>
+                          <option value="nemtudni">Még nem tudom.</option>
+                        </select>
+
+                <div class="form-group">
+                    <label for="comment"></label>
+                    <textarea class="form-control" rows="5" id="comment" name="comment" placeholder="Megjegyzés"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Elküld</button>
+
+        </form>
+    </div><!--container-->
+
+    <footer class="page-footer font-small blue">
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+              Galaxy Inc. 1999 </a>
+            <br>info@galaxy.hu
+            <br>0610-222-34-11
+            <br>Budapest 1040 Székes utca 2
+            </div>
+          </footer>
+
+</body>
+</html>
